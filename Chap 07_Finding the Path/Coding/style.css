@@ -1,0 +1,514 @@
+/* Select all CSS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&family=Figtree:wght@300&family=Raleway&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    font-family: Assistant, sans-serif;
+
+}
+
+:root {
+    --header-bg-color: rgb(1, 163, 144);
+    --footer-bg-color: rgb(1, 163, 144);
+    --body-bg-color: #e3e3e3;
+    --input-bg: #f2f2f2;
+    --input-bg-focus: #dbdbdb;
+    --text-color: #000;
+    --light-green: #00ad1d;
+    --dark-green: #016034;
+    --orange: #d97919;
+    --light-orange: #ffaf60;
+    --dark-orange: #c26100;
+    --x-dark-orange: rgb(157, 42, 1);
+    --light-red: rgb(236, 56, 56);
+    --white: #fff;
+    --light-black: rgb(23, 23, 23);
+    --light-blue: #0463ac;
+    --dark-blue: #070062;
+    --dark-purple: #a20152;
+}
+
+/* all link CSS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header CSS */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 4.3rem;
+
+    background-color: #391145;
+
+    /* border-radius: 0 0 8px 8px; */
+    border-bottom: 1px solid #e087b4;
+    color: #a20152;
+
+    font-family: 'Assistant', sans-serif;
+    background: linear-gradient(90deg, rgb(255, 235, 244) 0%, rgb(255, 235, 244) 100%);
+
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: hidden;
+    z-index: 100;
+    /* margin: 10px; */
+    /* background-color: rgb(1, 163, 144); */
+    /* box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2); */
+    /* font-family: Sharp Sans, sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+
+.logo {
+    padding-left: 4rem;
+    width: 40px;
+}
+
+div .nav-items {
+    display: flex;
+}
+
+.nav-items {
+    padding: 0 10px 0;
+    width: auto;
+}
+
+.nav-items>ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items>ul>li {
+    margin: auto 35px auto 0;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* LogIn and LogOut button */
+.logout-btn,
+.login-btn {
+    padding: 8px 17px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(162, 1, 82);
+    filter: brightness(1);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 0px;
+    opacity: 1;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0 0 0 0;
+    border-style: solid;
+
+}
+
+.search-container {
+    text-align: center;
+    max-width: 100%;
+    margin: 100px auto 10px;
+    position: relative;
+}
+
+/* Error Message */
+.error-container {
+    text-align: center;
+    font-size: large;
+    margin: 20px 0;
+}
+
+
+/*Shimmer CSS */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.shimmer-card {
+    flex-basis: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+
+.shimmer-title {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.shimmer-tags {
+    width: 80%;
+    margin-top: 4px;
+}
+
+.shimmer-details {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.shimmer-container .shimmer-img {
+    height: 144px;
+    width: 230px;
+}
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+    height: 15px;
+    background: #777;
+}
+
+.animate {
+    animation: shimmer 3s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: -1000px 0;
+    }
+
+    to {
+        background-position: 1000px 0;
+    }
+}
+
+/* Body CSS */
+
+.restaurant-list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0px 0px 0px;
+
+}
+
+.card {
+    width: 200px;
+    border-radius: 4px;
+    /* box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card>img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card>span {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.restaurant-list {
+    font-size: 17px;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.cuisines {
+    color: #686b78;
+    font-size: 13px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card>span>h4 {
+    text-align: center;
+}
+
+.card>span>h4:first-child {
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 176, 1);
+    border-radius: 5px;
+    padding: 0 5px 0;
+    color: white;
+}
+
+.card>span>h4:first-child .fa-star {
+    font-size: small;
+    padding: 0 5px 3px 0;
+}
+
+/* Restaurant Menu CSS Start */
+.restaurant-menu {
+    margin-top: 70px;
+    min-height: 80vh;
+    width: auto;
+}
+
+.restaurant-summary {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f1f7;
+    color: #391145;
+    font-family: Assistant, sans-serif;
+}
+
+.restaurant-img {
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.restaurant-summary-details {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 520px;
+    margin: 20px;
+}
+
+.restaurant-title {
+    font-size: 40px;
+    max-width: 540px;
+    font-weight: 300;
+}
+
+.restaurant-tags {
+    white-space: nowrap;
+    color: inherit;
+    opacity: 0.7;
+    font-size: 15px;
+    max-width: 540px;
+}
+
+.restaurant-details {
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 340px;
+}
+
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 5px;
+    background-color: var(--dark-purple);
+    border-radius: 5px;
+}
+
+.restaurant-menu-content {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items-container {
+    margin-top: 30px;
+    width: 850px;
+}
+
+.menu-title-wrap {
+    padding: 20px;
+}
+
+.menu-count {
+    margin-top: 14px;
+    line-height: 1.3;
+    color: rgba(40, 44, 63, 0.45);
+    letter-spacing: -0.3px;
+    font-size: 1rem;
+}
+
+.menu-items-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    max-height: 250px;
+    padding: 20px;
+    border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
+}
+
+.menu-item-details {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    overflow: hidden;
+}
+
+.item-title {
+    width: 60%;
+}
+
+.item-desc {
+    margin-top: 14px;
+    line-height: 1.3;
+    color: rgba(40, 44, 63, 0.45);
+    width: 60%;
+    letter-spacing: -0.3px;
+    font-size: 1rem;
+}
+
+.item-cost {
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3e4152;
+    width: 40%;
+}
+
+.menu-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+    overflow: hidden;
+}
+
+.menu-item-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: var(--dark-purple);
+    color: var(--input-bg);
+    padding: 8px 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+/* Restaurant Menu End Start */
+
+
+/* Error page CSS Start */
+.error-page {
+    text-align: center;
+    background-color: var(--body-bg-color);
+    height: 100vh;
+    width: auto;
+}
+
+.error-page .error-data {
+    padding: 10px 0px;
+}
+
+.error-page .error-back-home {
+    padding: 20px;
+}
+
+.error-page .error-back-home a {
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--light-black);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.error-page .error-back-home a:hover {
+    background-color: var(--dark-green);
+}
+
+/* Error page CSS End */
+
+
+/* footer CSS */
+.footer {
+    /* margin: 10px; */
+    width: auto;
+    color: #391145;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #6dd0fe;
+    padding: 20px 10px 20px;
+    border-radius: 8px 8px 0 0;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+
+
+
+
+
+
+
+    /* box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2); */
+    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+}
+
+.footer>i {
+    padding: 0 5px 0;
+    /* font-size: smaller; */
+    font-family: 'Assistant', sans-serif;
+
+
+}
+
+.fa-heart {
+    color: darkred;
+}
+
+.footer>strong {
+    padding-left: 5px;
+    font-family: 'Assistant', sans-serif;
+
+}
+
+.footer>strong>span {
+    /* color: rgb(203, 54, 0) */
+    font-family: 'Assistant', sans-serif;
+
+}
+
+.footer>a {
+    text-decoration: none;
+    /* color: black; */
+    font-family: 'Assistant', sans-serif;
+    border-radius: 12px;
+    padding: 0px 10px;
+    background-color: white;
+
+
+}
+
+.about-container {
+    margin-top: 70px;
+}
+
+.contact-container {
+    margin-top: 70px;
+
+}
