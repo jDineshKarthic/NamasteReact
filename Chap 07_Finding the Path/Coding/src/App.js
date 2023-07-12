@@ -11,6 +11,7 @@ import About from './About';
 import Error from './Error';
 import Contact from './Contact';
 import RestaurantMenu from './components/RestaurantMenu';
+import Profile from './components/Profile';
 
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { restaurantList } from '../RestaurantListDB';
